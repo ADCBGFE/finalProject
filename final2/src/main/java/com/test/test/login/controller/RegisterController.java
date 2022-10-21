@@ -27,8 +27,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController								// 프로그램 등록
-@RequestMapping("/register")			// 이러면 get post mapping 에서 register빼도 됨. 여기서 빠져도 된다는거지 브라우저는 아님!!
+@RestController						
+@RequestMapping("/register")
 public class RegisterController {	
 	
 	@Autowired

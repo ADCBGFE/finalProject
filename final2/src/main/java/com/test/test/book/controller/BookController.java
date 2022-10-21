@@ -30,10 +30,9 @@ public class BookController {
 		return bookService.getBookList();
 	}
 	
-	// 책 상세정보		http://localhost:8080/web/book/book or book/book?bookId=?
+	// 책 상세정보		http://localhost:8080/web/book/book?bookId=?
 	@GetMapping("/book")
-//	@PostMapping("/book")
-	public List<BookDTO> getBook(BookDTO bookDto) {	// Post일경우 @RequestBody 를 BookDTO앞에 붙임
+	public List<BookDTO> getBook(BookDTO bookDto) {
 		return bookService.getBook(bookDto);
 	}
 

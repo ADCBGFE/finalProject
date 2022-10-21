@@ -20,9 +20,8 @@ public class MemberDAO {
 	
 	Integer rand = (int)(Math.random() * 10000);
 	
-	// 사용자 정보를 TM_MB_BASE테이블에 저장하는 메서드
+	// 사용자 정보를 저장
     public int insertUser(MemberDTO memberDto) {
-        int rowCnt = FAIL;
 
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -37,16 +36,15 @@ public class MemberDAO {
             pstmt.setString(3, memberDto.getMbEmail());
             pstmt.setString(4, memberDto.getMbName());
             pstmt.setString(5, memberDto.getDobDate());
-//            pstmt.setDate(5, new java.sql.Date(registerDto.getDobDate().getTime()));
             pstmt.setString(6, memberDto.getMbPw());
             pstmt.setString(7, rand.toString());
 
-            return pstmt.executeUpdate(); //  insert, delete, update;
+            return pstmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
             return FAIL;
         } finally {
-            close(pstmt, conn);  //     private void close(AutoCloseable... acs) {
+            close(pstmt, conn);
         }
     }
 
@@ -65,7 +63,7 @@ public class MemberDAO {
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, mbId);
 
-            rs = pstmt.executeQuery(); //  select
+            rs = pstmt.executeQuery();
 
             if (rs.next()) {
             	memberDto = new MemberDTO();
@@ -84,13 +82,13 @@ public class MemberDAO {
             System.out.println("2: " + memberDto);
             return null;
         } finally {
-            close(rs, pstmt, conn);  //     private void close(AutoCloseable... acs) {
+            close(rs, pstmt, conn);
         }
         System.out.println("3: " + memberDto);
         return memberDto;
     }   
     
-    private void close(AutoCloseable... acs) {	// 이걸 사용함으로써 매번 close try catch 안해도 됨.
+    private void close(AutoCloseable... acs) {
         for(AutoCloseable ac :acs)
             try { if(ac!=null) ac.close(); } catch(Exception e) { e.printStackTrace(); }
     }

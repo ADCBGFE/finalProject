@@ -1,8 +1,5 @@
 package com.test.test.login.model;
 
-import java.util.Objects;
-
-
 public class MemberDTO {
 	private String mbId;
 	private String mbPw;

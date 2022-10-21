@@ -1,7 +1,6 @@
 package com.test.test.rental.model;
 
 import java.util.Date;
-import java.util.List;
 import java.util.Objects;
 
 public class BookRentalDTO {
