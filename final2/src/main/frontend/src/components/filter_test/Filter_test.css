@@ -1,0 +1,52 @@
+/* 
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5 {
+  opacity: 0;
+}
+
+.btn1.show {
+  opacity: 1;
+  animation-name: dropdown;
+  animation-duration: .2s;
+  transition: all .5s ease;
+}
+.btn2.show {
+  opacity: 1;
+  display: block;
+  animation-name: dropdown;
+  animation-duration: .4s;
+  transition: all .5s ease;
+}
+.btn3.show {
+  opacity: 1;
+  display: block;
+  animation-name: dropdown;
+  animation-duration: .6s;
+  transition: all .5s ease;
+}
+.btn4.show {
+  opacity: 1;
+  display: block;
+  animation-name: dropdown;
+  animation-duration: .8s;
+  transition: all .5s ease;
+}
+.btn5.show {
+  opacity: 1;
+  display: block;
+  animation-name: dropdown;
+  animation-duration: 1s;
+  transition: all .5s ease;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

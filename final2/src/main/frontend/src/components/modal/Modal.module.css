@@ -1,0 +1,101 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalCon {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal {
+  /* border: 1px solid black; */
+  width: 30rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0.5rem;
+  box-shadow: 1px 2px 4px 2px rgb(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: #f7e3d0;
+}
+.modal-header h1 {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: rgb(255, 0, 0);
+}
+
+.modal-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 5rem;
+  text-align: center;
+}
+.modal-center h4 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+.modal-center p {
+  color: rgb(105, 105, 105);
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

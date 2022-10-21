@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  padding-top: 2rem;
+  margin-right: 2rem;
+  padding: 0 5rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 1.5rem;
+  padding: .7rem;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 10rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #777;
+}
+.count {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.link {
+  font-size: .8rem;
+  border-bottom: 1px solid #999;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.percent {
+  display: flex;
+  align-items: center;
+  color: green;
+}
+.percentDown {
+  display: flex;
+  align-items: center;
+  color: red;
+}
+.icon {
+  font-size: 2rem;
+  padding: 5px;
+  background-color: orange;
+  border-radius: 5px;
+  color: #fff;
+  align-self: flex-end;
+}

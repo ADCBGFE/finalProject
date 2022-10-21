@@ -1,0 +1,120 @@
+.admin-page {
+    background-color: rgb(188, 188, 188);
+}
+
+.i-name {
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.values .val-box {
+    background-color: #fff;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.values .val-box i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.val-box i svg {
+    font-size: 2rem;
+}
+
+.values .val-box .a {
+    background: dodgerblue;
+}
+
+.values .val-box .b {
+    background: plum;
+}
+
+.values .val-box .c {
+    background: purple;
+}
+
+.values .val-box .d {
+    background: seagreen;
+}
+
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box span {
+    font-size: 15px;
+    color: #828997;
+}
+
+.board {
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.board h5 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #eef0f3;
+}
+
+thead td {
+    font-size: 14px;
+    font-weight: 550;
+    background: #F9FAFB;
+    padding: 15px;
+}
+
+tbody tr td {
+    padding: 10px 15px;
+}
+
+.book {
+    width: 300px;
+}
+.return-icon {
+    width: 120px;
+}
+

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: abster;
+  src: url(font/abster-webfont.woff) format('woff');
+}
+
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../../assets/main4-2.jpg"); */
+}
+
+.hero-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+  display: none;
+}
+.hero-back {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: scaleY(1.4);
+  }
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(25%);
+  }
+}
+
+.hero-container .hero-header {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-container .hero-header h1 a {
+  text-decoration: none;
+  color: white;
+  font-family: abster;
+}
+
+.hero-container .hero-nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.hero-container .hero-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-container .hero-nav ul li a:hover {
+  color: #1fdfdf;
+}
+
+.hero-container .hero-desc {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-container .hero-desc h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-container .hero-desc p {
+  font-size: 20px;
+  color: rgb(128, 133, 111);
+  margin-bottom: 3rem;
+}
+
+.hero-container .hero-desc a {
+  background: none;
+  border: 2px solid darkseagreen;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.hero-container .hero-desc a:hover {
+  background-color: darkslategray;
+}
+
+.hero-container .hero-desc a {
+  color: #fff;
+  font-weight: 700;
+}

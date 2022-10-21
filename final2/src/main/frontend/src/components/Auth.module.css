@@ -1,0 +1,91 @@
+.auth {
+  margin: 5rem auto;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.279);
+  width: 25rem;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f7e3d0;
+}
+
+.auth-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+.auth-header button {
+  cursor: pointer;
+  border: none;
+  padding: .5rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background: transparent;
+}
+.auth-header button h1 {
+  font-size: 1.5rem;
+  color: orange;
+}
+
+.btnCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.p {
+  text-align: center;
+  width: 8rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  position: absolute;
+  left: 65%;
+  top: 10%;
+  color: #999;
+  cursor: pointer;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  display: block;
+  color: #616161;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  display: block;
+  width: 20rem;
+  margin: auto;
+  border-radius: 4px;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: .5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  background: orange;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.btnCon .btn {
+  padding: .5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  background: orange;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 1rem;
+}

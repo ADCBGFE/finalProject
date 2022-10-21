@@ -1,0 +1,86 @@
+.new-comment__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-comment__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.new-comment__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 45rem;
+  max-width: 100%;
+}
+
+.new-comment__actions {
+  text-align: right;
+  
+}
+
+/* asdf */
+
+.writing-box {
+  width: 700px;
+  height: 70px;
+  padding: 10px;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color: #b1b1b1;
+  max-height: 250px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.writing-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin-bottom: 2rem;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.review-container h2 {
+  font-size: 28px;
+  margin-right: 2rem;
+}
+
+.comment-btn {
+  margin: 10px;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  margin-top: 2rem;
+  background-color: rgb(49, 70, 116);
+  color: #fff;
+  }
